@@ -7,7 +7,6 @@ const animator      = require('./lib/controller')
 
 
 const anim = animator()
-const randSeed = Math.random()
 
 const seed = Math.random() // enables consistent randomness for this session
 
@@ -56,6 +55,9 @@ const p4 = {
 }
 
 const aas = document.querySelectorAll('a')
+for(let i=0; i < aas.length; i++) {
+  aas[i].style.color = 'dodgerblue'
+}
 anim.add(animateLabel(aas[aas.length-1], p4))
 
 anim.start()
