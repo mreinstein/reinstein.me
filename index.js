@@ -1,6 +1,7 @@
 'use strict'
 
 const animateHeader = require('./lib/animate-header')
+const animateLabel  = require('./lib/animate-label')
 const animateText   = require('./lib/animate-text')
 const animator      = require('./lib/controller')
 
@@ -20,11 +21,17 @@ const p5 = {
 const headers = document.querySelectorAll('h1,h2')
 
 for(let i=0; i < headers.length; i++) {
+  if(headers[i].classList.contains('no-animation')) {
+    continue
+  }
+
+  p5.delay += Math.floor(50 + Math.random() * 50)
   anim.add(animateHeader(headers[i], p5))
 }
 
 
 const p3 = {
+  delay: 400,
   etchSpeed: 10 + Math.round(Math.random() * 4), // milliseconds/character
   targetBGColor: 'rgb(255,255,255)',
   targetFGColor: 'rgb(40, 40, 40)',
@@ -35,7 +42,20 @@ const p3 = {
 
 const lis = document.querySelectorAll('li,p')
 for(let i=0; i < lis.length; i++) {
+  if(lis[i].classList.contains('no-animation')) {
+    continue
+  }
+
   anim.add(animateText(lis[i], p3))
 }
+
+const p4 = {
+  delay: 600,
+  color: [ 30, 144, 255 ],
+  seed
+}
+
+const aas = document.querySelectorAll('a')
+anim.add(animateLabel(aas[aas.length-1], p4))
 
 anim.start()

@@ -4,7 +4,8 @@
   "description": "https://reinstein.me",
   "private": true,
   "scripts": {
-    "build": "browserify index.js -t [ babelify --presets [ es2015 ] ] | uglifyjs --screw-ie8 --compress > bundle.js"
+    "build": "browserify index.js -t [ babelify --presets [ es2015 ] ] | uglifyjs --screw-ie8 --compress > bundle.js",
+    "start": "serve ."
   },
   "repository": {
     "type": "git",
@@ -20,7 +21,8 @@
     "clamp": "^1.0.1",
     "eases": "^1.0.8",
     "raf": "^3.3.0",
-    "seedrandom": "davidbau/seedrandom#cac59aac49c2a8ae7cd48d33e1926425f83e61ec"
+    "seedrandom": "davidbau/seedrandom#cac59aac49c2a8ae7cd48d33e1926425f83e61ec",
+    "serve": "^5.1.3"
   },
   "devDependencies": {
     "babel-preset-es2015": "^6.22.0",
