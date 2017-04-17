@@ -4,7 +4,8 @@
   "description": "https://reinstein.me",
   "private": true,
   "scripts": {
-    "build": "browserify index.js -t [ babelify --presets [ es2015 ] ] | uglifyjs --screw-ie8 --compress > bundle.js",
+    "build-local": "browserify index.js -t [ babelify --presets [ es2015 ] ] | uglifyjs --screw-ie8 --compress > bundle.js",
+    "deploy": "npm run build-local && now && now alias",
     "start": "serve ."
   },
   "repository": {
@@ -26,5 +27,10 @@
     "babelify": "^7.3.0",
     "uglify-js": "^2.7.5",
     "watchify": "^3.9.0"
+  },
+  "now": {
+    "alias": [
+      "reinstein.me"
+    ]
   }
 }
