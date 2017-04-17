@@ -1,12 +1,12 @@
 'use strict'
 
-const animateHeader = require('./lib/animate-header')
-const animateLabel  = require('./lib/animate-label')
-const animateText   = require('./lib/animate-text')
-const animator      = require('./lib/controller')
+const animateHeader = require('text-animate').header
+const animateLabel  = require('text-animate').label
+const animateText   = require('text-animate').text
+const controller      = require('text-animate').controller
 
 
-const anim = animator()
+const anim = controller()
 
 const seed = Math.random() // enables consistent randomness for this session
 
