@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "build-local": "browserify index.js | uglifyjs --compress --mangle > bundle.js",
-    "deploy": "npm run build-local && now && now alias",
+    "deploy": "npm run build-local && now --static && now alias",
     "start": "serve ."
   },
   "repository": {
@@ -19,12 +19,12 @@
   },
   "homepage": "https://github.com/mreinstein/reinstein.me#readme",
   "dependencies": {
-    "serve": "^6.4.9",
+    "serve": "^6.4.10",
     "text-animate": "^0.6.0"
   },
   "devDependencies": {
-    "browserify": "^15.2.0",
-    "uglify-es": "^3.3.9"
+    "browserify": "^16.1.0",
+    "uglify-es": "^3.3.10"
   },
   "now": {
     "alias": [
