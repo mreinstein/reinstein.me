@@ -1,5 +1,5 @@
 # reinstein.me
 
-source for my personal site
+source for my personal website
 
 https://reinstein.me
