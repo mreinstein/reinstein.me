@@ -54,10 +54,8 @@ const p4 = {
   seed
 }
 
-const aas = document.querySelectorAll('a')
-for(let i=0; i < aas.length; i++) {
-  aas[i].style.color = 'dodgerblue'
-}
-anim.add(animateLabel(aas[aas.length-1], p4))
+const links = document.querySelectorAll('a')
+const lastLink = links[links.length-1]
+anim.add(animateLabel(lastLink, p4))
 
 anim.start()
