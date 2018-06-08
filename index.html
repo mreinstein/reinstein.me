@@ -33,11 +33,12 @@
       font-size: 1em;
       font-weight: normal;
     }
-
+    /*
     body {
       width: 90ex;
       margin: 1em auto;
     }
+    */
 
     a:hover {
       color: deeppink;
@@ -70,6 +71,13 @@
     h2::before {
       content: '## ';
       color: deeppink;
+    }
+
+    @media only screen and (min-width: 600px) {
+      body {
+        width: 90ex;
+        margin: 1em auto;
+      }
     }
 
   </style>
