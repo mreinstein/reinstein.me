@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/mreinstein/reinstein.me#readme",
   "dependencies": {
-    "serve": "^7.1.5",
+    "serve": "^8.2.0",
     "text-animate": "^0.7.0"
   },
   "devDependencies": {
