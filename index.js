@@ -1,5 +1,7 @@
-import { header, label, text, controller } from 'text-animate'
+import textAnimate from 'text-animate'
 
+
+const { header, label, text, controller } = textAnimate
 
 const anim = controller()
 

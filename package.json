@@ -20,7 +20,7 @@
   "homepage": "https://github.com/mreinstein/reinstein.me#readme",
   "dependencies": {
     "serve": "^10.1.1",
-    "text-animate": "^0.7.0"
+    "text-animate": "^0.9.0"
   },
   "devDependencies": {
     "rollup": "^0.67.1",
