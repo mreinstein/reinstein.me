@@ -1,11 +1,11 @@
 {
   "name": "reinstein.me",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "https://reinstein.me",
   "private": true,
   "scripts": {
-    "build-local": "rollup -c rollup.config.js index.js --file bundle.js --format iife",
-    "deploy": "npm run build-local && now --static && now alias",
+    "build": "rollup -c rollup.config.js index.js --file bundle.js --format iife",
+    "deploy": "npm run build",
     "start": "serve ."
   },
   "repository": {
@@ -27,11 +27,5 @@
     "rollup-plugin-commonjs": "^10.0.0",
     "rollup-plugin-node-resolve": "^5.2.0",
     "rollup-plugin-terser": "^5.3.0"
-  },
-  "now": {
-    "alias": [
-      "reinstein.me",
-      "www.reinstein.me"
-    ]
   }
 }
