@@ -51,16 +51,16 @@
 
     h1 {
       font-size: 1.5em;
-      margin-bottom: 0.6em;
+      margin-block-end: 0.6em;
     }
 
     h1, h2, p {
-      margin-bottom: 1.0em;
+      margin-block-end: 1.0em;
     }
 
     h1, h2 {
       font-weight: bold;
-      margin-top: 2em;
+      margin-block-start: 2em;
     }
 
     h1::before {
@@ -75,8 +75,9 @@
 
     @media only screen and (min-width: 600px) {
       body {
-        width: 90ex;
-        margin: 1em auto;
+        inline-size: 90ex;
+        margin-block: 1em;
+        margin-inline: auto;
       }
     }
 
