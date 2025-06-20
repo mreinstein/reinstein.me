@@ -20,10 +20,10 @@
   },
   "homepage": "https://github.com/mreinstein/reinstein.me#readme",
   "dependencies": {
-    "serve": "^13.0.0",
-    "text-animate": "^0.10.1"
+    "serve": "^14.0.0",
+    "text-animate": "^0.11.0"
   },
   "devDependencies": {
-    "esbuild": "^0.24.2"
+    "esbuild": "^0.25.0"
   }
 }
